@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yummy. - Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="additions.css">
+</head>
+<body>
+
+
+<div id="preloader">
+  <div class="preloader-logo">Yummy<span>.</span></div>
+  <div class="preloader-dots">
+    <span></span><span></span><span></span>
+  </div>
+</div>
+
+
+<nav id="navbar">
+  <a href="#home" class="logo">Yummy<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#chefs">Chefs</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li class="dropdown">
+      <a href="#">Dropdown <i class="fas fa-chevron-down" style="font-size:.7rem"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#" class="btn-book">Book a Table</a>
+  <i class="fa-solid fa-bars hamburger" onclick="toggleMobile()" aria-label="Menu"></i>
+</nav>
+<div class="mobile-overlay" id="mobileOverlay" onclick="closeMobile()"></div>
+
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-header">
+    <a href="#home" class="logo" onclick="closeMobile()">Yummy<span>.</span></a>
+    <button class="mobile-close" onclick="closeMobile()">&#10005;</button>
+  </div>
+  <a href="#home" class="active" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#menu" onclick="closeMobile()">Menu</a>
+  <a href="#events" onclick="closeMobile()">Events</a>
+  <a href="#chefs" onclick="closeMobile()">Chefs</a>
+  <a href="#gallery" onclick="closeMobile()">Gallery</a>
+  <a href="#" onclick="toggleMobileDropdown(event)">
+    Dropdown <i class="fas fa-chevron-down" style="font-size:.75rem"></i>
+  </a>
+  <div class="mobile-dropdown-items" id="mobileDropdown">
+    <a href="#" onclick="closeMobile()">Option 1</a>
+    <a href="#" onclick="closeMobile()">Option 2</a>
+    <a href="#" onclick="closeMobile()">Option 3</a>
+  </div>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="#" class="mobile-book">Book a Table</a>
+</div>
+
+
+<section id="home">
+  <div class="hero-content">
+    <h1>Enjoy Your Healthy<br>Delicious Food</h1>
+    <p>We are a team of talented designers making websites with Bootstrap. Serving fresh, healthy meals crafted with love.</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn-primary">Book a Table</a>
+      <a href="#" class="btn-video">
+        <div class="play-icon"><i class="fas fa-play"></i></div>
+        Watch Video
+      </a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://themewagon.github.io/yummy-red/assets/img/hero-img.png" alt="Delicious food" />
+  </div>
+</section>
+
+
+<section id="about">
+  <p class="section-label">About Us</p>
+  <h2 class="section-title">Learn More <span>About Us</span></h2>
+  <div class="about-grid">
+    <div class="about-left">
+      <img src="https://themewagon.github.io/yummy-red/assets/img/about.jpg" alt="Restaurant interior" />
+      <div class="about-book">
+        <p>Book a Table</p>
+        <a href="tel:+15589554885">+1 5589 55488 55</a>
+      </div>
+    </div>
+    <div class="about-right">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <ul class="about-checks">
+        <li><i class="fas fa-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        <li><i class="fas fa-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+        <li><i class="fas fa-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+      </ul>
+      <p class="body-text">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+      <div class="about-video">
+        <img src="https://themewagon.github.io/yummy-red/assets/img/about-2.jpg" alt="Food video thumbnail" />
+        <div class="play-overlay">
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="why">
+  <div class="why-grid">
+    <div class="why-card red">
+      <h3>Why Choose Yummy</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit asperiores dolores sed et. Tenetur quia eos autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+      <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+    </div>
+    <div class="why-card">
+      <div class="icon"><i class="fas fa-chart-bar"></i></div>
+      <h4>Corporis voluptates officia eiusmod</h4>
+      <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon"><i class="fas fa-gem"></i></div>
+      <h4>Ullamco laboris ladore lore pan</h4>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon"><i class="fas fa-layer-group"></i></div>
+      <h4>Labore consequatur incidid dolore</h4>
+      <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item"><h2 id="counter1">0</h2><p>Clients</p></div>
+    <div class="stat-item"><h2 id="counter2">0</h2><p>Projects</p></div>
+    <div class="stat-item"><h2 id="counter3">0</h2><p>Hours Of Support</p></div>
+    <div class="stat-item"><h2 id="counter4">0</h2><p>Workers</p></div>
+  </div>
+</section>
+
+
+<section id="menu">
+  <p class="section-label">Our Menu</p>
+  <h2 class="section-title">Check Our <span>Yummy Menu</span></h2>
+  <div class="menu-tabs">
+    <button class="menu-tab active" onclick="switchTab(this,'starters')">Starters</button>
+    <button class="menu-tab" onclick="switchTab(this,'breakfast')">Breakfast</button>
+    <button class="menu-tab" onclick="switchTab(this,'lunch')">Lunch</button>
+    <button class="menu-tab" onclick="switchTab(this,'dinner')">Dinner</button>
+  </div>
+  <div class="menu-heading">
+    <p id="menuMiniTitle">MENU</p>
+    <h3 id="menuBigTitle">Starters</h3>
+  </div>
+  <div id="starters" class="menu-grid tab-content"></div>
+  <div id="breakfast" class="menu-grid tab-content" style="display:none"></div>
+  <div id="lunch" class="menu-grid tab-content" style="display:none"></div>
+  <div id="dinner" class="menu-grid tab-content" style="display:none"></div>
+</section>
+
+
+<section id="testimonials">
+  <p class="section-label" data-aos="fade-up">Testimonials</p>
+  <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">What Are They <span>Saying About Us</span></h2>
+  <div class="testimonial-wrapper" data-aos="zoom-in" data-aos-delay="150">
+    <button class="testimonial-arrow left" onclick="prevTestimonial()"><i class="fas fa-chevron-left"></i></button>
+    <div class="testimonial-content" id="testimonialContent"></div>
+    <button class="testimonial-arrow right" onclick="nextTestimonial()"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  <div class="testimonial-dots" id="testimonialDots"></div>
+</section>
+
+
+<section id="events">
+  <div class="events-overlay"></div>
+  <div class="events-slider" id="eventsSlider"></div>
+  <div class="event-dots" id="eventDots"></div>
+</section>
+
+
+<section id="chefs">
+  <p class="section-label" data-aos="fade-up">Chefs</p>
+  <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Our <span>Professional Chefs</span></h2>
+  <div class="chefs-grid" id="chefsGrid"></div>
+</section>
+
+
+<section id="booking">
+  <p class="section-label" data-aos="fade-up">Book A Table</p>
+  <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Book Your <span>Stay With Us</span></h2>
+  <div class="booking-box" data-aos="fade-up" data-aos-delay="150">
+    <div class="booking-img">
+      <img src="https://themewagon.github.io/yummy-red/assets/img/reservation.jpg" alt="Book table">
+    </div>
+    <form class="booking-form">
+      <div class="booking-row">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Your Phone">
+      </div>
+      <div class="booking-row">
+        <input type="date">
+        <input type="time">
+        <input type="number" placeholder="# of people" min="1">
+      </div>
+      <textarea placeholder="Message"></textarea>
+      <button type="submit" class="booking-btn">Book a Table</button>
+    </form>
+  </div>
+</section>
+
+
+<section id="gallery">
+  <p class="section-label" data-aos="fade-up">Gallery</p>
+  <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Check <span>Our Gallery</span></h2>
+  <div class="gallery-slider-wrap" data-aos="zoom-in" data-aos-delay="150">
+    <button class="gallery-arrow left" onclick="prevGallery()"><i class="fas fa-chevron-left"></i></button>
+    <div class="gallery-slider" id="gallerySlider"></div>
+    <button class="gallery-arrow right" onclick="nextGallery()"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  <div class="gallery-dots" id="galleryDots"></div>
+</section>
+
+
+<section id="contact">
+  <p class="section-label" data-aos="fade-up">Contact</p>
+  <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Need Help? <span>Contact Us</span></h2>
+  <div class="contact-map" data-aos="fade-up" data-aos-delay="150">
+    <iframe src="https://www.google.com/maps?q=New%20York&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="contact-info-grid">
+    <div class="contact-info-card" data-aos="fade-up">
+      <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div><h4>Address</h4><p>A108 Adam Street, New York, NY 535022</p></div>
+    </div>
+    <div class="contact-info-card" data-aos="fade-up" data-aos-delay="50">
+      <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+      <div><h4>Call Us</h4><p>+1 5589 55488 55</p></div>
+    </div>
+    <div class="contact-info-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+      <div><h4>Email Us</h4><p>info@example.com</p></div>
+    </div>
+    <div class="contact-info-card" data-aos="fade-up" data-aos-delay="150">
+      <div class="contact-icon"><i class="fas fa-clock"></i></div>
+      <div><h4>Opening Hours</h4><p><strong>Mon-Sat:</strong> 11AM - 23PM; <strong>Sunday:</strong> Closed</p></div>
+    </div>
+  </div>
+  <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+    <div class="contact-row">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+    </div>
+    <input type="text" placeholder="Subject">
+    <textarea placeholder="Message"></textarea>
+    <button type="submit" class="contact-btn">Send Message</button>
+  </form>
+</section>
+
+
+<footer id="footer">
+  <div class="footer-grid">
+    <div class="footer-item">
+      <div class="footer-icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div><h4>Address</h4><p>A108 Adam Street</p><p>New York, NY 535022</p></div>
+    </div>
+    <div class="footer-item">
+      <div class="footer-icon"><i class="fas fa-phone-alt"></i></div>
+      <div><h4>Contact</h4><p><strong>Phone:</strong> +1 5589 55488 55</p><p><strong>Email:</strong> info@example.com</p></div>
+    </div>
+    <div class="footer-item">
+      <div class="footer-icon"><i class="fas fa-clock"></i></div>
+      <div><h4>Opening Hours</h4><p><strong>Mon-Sat:</strong> 11AM - 23PM</p><p><strong>Sunday:</strong> Closed</p></div>
+    </div>
+    <div class="footer-item">
+      <h4>Follow Us</h4>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© Copyright <strong>Yummy</strong> All Rights Reserved</p>
+  </div>
+</footer>
+
+
+<a href="#home" class="back-top" id="backTop">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    setTimeout(function () {
+      preloader.classList.add('fade-out');
+    }, 1000);
+  });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

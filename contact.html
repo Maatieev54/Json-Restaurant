@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Booking — Yummy.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="additions.css" />
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="preloader-logo">Yummy<span>.</span></div>
+    <div class="preloader-dots"><span></span><span></span><span></span></div>
+  </div>
+
+  <nav id="navbar" class="scrolled solid">
+    <a href="index.html" class="logo">Yummy<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="#booking" class="btn-book">Book a Table</a>
+    <i class="fa-solid fa-bars hamburger" onclick="toggleMobile()" aria-label="Menu"></i>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobile()"></div>
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="logo" onclick="closeMobile()">Yummy<span>.</span></a>
+      <button class="mobile-close" onclick="closeMobile()">&#10005;</button>
+    </div>
+    <a href="index.html" onclick="closeMobile()">Home</a>
+    <a href="menu.html" onclick="closeMobile()">Menu</a>
+    <a href="about.html" onclick="closeMobile()">About</a>
+    <a href="events.html" onclick="closeMobile()">Events</a>
+    <a href="contact.html" class="active" onclick="closeMobile()">Contact</a>
+    <a href="#booking" class="mobile-book" onclick="closeMobile()">Book a Table</a>
+  </div>
+
+  <section id="contact" class="page-section">
+    <p class="section-label">Contact</p>
+    <h2 class="section-title">Need Help? <span>Contact Us</span></h2>
+    <div class="contact-map" data-aos="fade-up" data-aos-delay="150">
+      <iframe src="https://www.google.com/maps?q=New%20York&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact-info-grid">
+      <div class="contact-info-card" data-aos="fade-up">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div><h4>Address</h4><p>A108 Adam Street, New York, NY 535022</p></div>
+      </div>
+      <div class="contact-info-card" data-aos="fade-up" data-aos-delay="50">
+        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+        <div><h4>Call Us</h4><p>+1 5589 55488 55</p></div>
+      </div>
+      <div class="contact-info-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div><h4>Email Us</h4><p>hello@yummy.com</p></div>
+      </div>
+      <div class="contact-info-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+        <div><h4>Opening Hours</h4><p><strong>Mon-Sat:</strong> 11AM - 11PM; <strong>Sunday:</strong> Closed</p></div>
+      </div>
+    </div>
+    <form class="contact-form" data-aos="fade-up" data-aos-delay="200" novalidate>
+      <div class="contact-row">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+      </div>
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit" class="contact-btn">Send Message</button>
+      <p class="form-msg" id="contactMsg" role="status"></p>
+    </form>
+  </section>
+
+  <section id="booking">
+    <p class="section-label" data-aos="fade-up">Book A Table</p>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Reserve Your <span>Table Today</span></h2>
+    <div class="booking-box" data-aos="fade-up" data-aos-delay="150">
+      <div class="booking-img"><img src="assets/img/reservation.jpg" alt="Book a table"></div>
+      <form class="booking-form" novalidate>
+        <div class="booking-row">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <input type="text" placeholder="Your Phone">
+        </div>
+        <div class="booking-row">
+          <input type="date">
+          <input type="time">
+          <input type="number" placeholder="# of people" min="1">
+        </div>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit" class="booking-btn">Book a Table</button>
+        <p class="form-msg" id="bookingMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-grid">
+      <div class="footer-item">
+        <div class="footer-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div><h4>Address</h4><p>A108 Adam Street</p><p>New York, NY 535022</p></div>
+      </div>
+      <div class="footer-item">
+        <div class="footer-icon"><i class="fas fa-phone-alt"></i></div>
+        <div><h4>Contact</h4><p><strong>Phone:</strong> +1 5589 55488 55</p><p><strong>Email:</strong> hello@yummy.com</p></div>
+      </div>
+      <div class="footer-item">
+        <div class="footer-icon"><i class="fas fa-clock"></i></div>
+        <div><h4>Opening Hours</h4><p><strong>Mon-Sat:</strong> 11AM - 11PM</p><p><strong>Sunday:</strong> Closed</p></div>
+      </div>
+      <div class="footer-item">
+        <h4>Follow Us</h4>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Copyright <strong>Yummy</strong> — Designed &amp; developed by Mətin Fətizadə</p>
+      <p class="footer-note-small">Demo project · uses a decorative (simulated) loading animation.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-top" id="backTop"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

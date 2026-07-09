@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yummy. — Fine Dining Restaurant</title>
-  <meta name="description" content="Yummy is a modern restaurant serving fresh, seasonal dishes crafted with love. Book a table today." />
+  <title>About — Yummy.</title>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -18,12 +17,12 @@
     <div class="preloader-dots"><span></span><span></span><span></span></div>
   </div>
 
-  <nav id="navbar">
+  <nav id="navbar" class="scrolled solid">
     <a href="index.html" class="logo">Yummy<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="menu.html">Menu</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="about.html" class="active">About</a></li>
       <li><a href="events.html">Events</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -36,32 +35,15 @@
       <a href="index.html" class="logo" onclick="closeMobile()">Yummy<span>.</span></a>
       <button class="mobile-close" onclick="closeMobile()">&#10005;</button>
     </div>
-    <a href="index.html" class="active" onclick="closeMobile()">Home</a>
+    <a href="index.html" onclick="closeMobile()">Home</a>
     <a href="menu.html" onclick="closeMobile()">Menu</a>
-    <a href="about.html" onclick="closeMobile()">About</a>
+    <a href="about.html" class="active" onclick="closeMobile()">About</a>
     <a href="events.html" onclick="closeMobile()">Events</a>
     <a href="contact.html" onclick="closeMobile()">Contact</a>
     <a href="contact.html" class="mobile-book">Book a Table</a>
   </div>
 
-  <section id="home">
-    <div class="hero-content">
-      <h1>Enjoy Your Healthy<br>Delicious Food</h1>
-      <p>A modern kitchen serving fresh, seasonal dishes crafted with love. Warm hospitality, honest ingredients and flavours that bring people back.</p>
-      <div class="hero-btns">
-        <a href="contact.html" class="btn-primary">Book a Table</a>
-        <a href="menu.html" class="btn-video">
-          <div class="play-icon"><i class="fas fa-utensils"></i></div>
-          Explore Menu
-        </a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="assets/img/hero.png" alt="Delicious food" />
-    </div>
-  </section>
-
-  <section id="about">
+  <section id="about" class="page-section">
     <p class="section-label">About Us</p>
     <h2 class="section-title">Learn More <span>About Us</span></h2>
     <div class="about-grid">
@@ -73,14 +55,17 @@
         </div>
       </div>
       <div class="about-right">
-        <p>Since 2009, Yummy has been a neighbourhood favourite — a place where quality ingredients, careful cooking and genuine warmth come together on every plate.</p>
+        <p>Since 2009, Yummy has grown from a small family kitchen into one of the city's most-loved dining spots — without ever losing the warmth it started with.</p>
         <ul class="about-checks">
-          <li><i class="fas fa-check-circle"></i> Fresh, locally-sourced produce delivered daily.</li>
-          <li><i class="fas fa-check-circle"></i> A seasonal menu shaped by our head chef's travels.</li>
-          <li><i class="fas fa-check-circle"></i> Cosy interiors and attentive, unhurried service that makes every visit feel special.</li>
+          <li><i class="fas fa-check-circle"></i> Ingredients sourced from trusted local farms and markets.</li>
+          <li><i class="fas fa-check-circle"></i> A menu that celebrates the seasons and honest cooking.</li>
+          <li><i class="fas fa-check-circle"></i> A welcoming space designed for long lunches, first dates and big celebrations alike.</li>
         </ul>
-        <p class="body-text">Whether it's a quiet dinner for two or a celebration with friends, our team is dedicated to making every moment memorable — from the first welcome to the last bite.</p>
-        <a href="about.html" class="btn-primary" style="display:inline-block;margin-top:6px">More About Us</a>
+        <p class="body-text">Our philosophy is simple: real ingredients, cooked with skill and served with heart. We'd love to welcome you to our table.</p>
+        <div class="about-video">
+          <img src="assets/img/about-2.jpg" alt="Our kitchen" />
+          <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+        </div>
       </div>
     </div>
   </section>
@@ -90,7 +75,7 @@
       <div class="why-card red">
         <h3>Why Choose Yummy</h3>
         <p>We believe great food starts with great ingredients and ends with people you love around the table. Every dish is prepared to order, plated with care and served by a team that treats you like family.</p>
-        <a href="about.html">Learn More <i class="fas fa-chevron-right"></i></a>
+        <a href="menu.html">See Our Menu <i class="fas fa-chevron-right"></i></a>
       </div>
       <div class="why-card">
         <div class="icon"><i class="fas fa-leaf"></i></div>
@@ -98,9 +83,9 @@
         <p>Menus that change with the seasons, built around the best ingredients available each week.</p>
       </div>
       <div class="why-card">
-        <div class="icon"><i class="fas fa-utensils"></i></div>
-        <h4>Crafted by Expert Chefs</h4>
-        <p>A passionate kitchen team with decades of combined experience across world cuisines.</p>
+        <div class="icon"><i class="fas fa-award"></i></div>
+        <h4>Award-Winning Kitchen</h4>
+        <p>Recognised locally for quality and consistency, three years running.</p>
       </div>
       <div class="why-card">
         <div class="icon"><i class="fas fa-heart"></i></div>
@@ -119,24 +104,10 @@
     </div>
   </section>
 
-  <section id="menu">
-    <p class="section-label">Our Menu</p>
-    <h2 class="section-title">A Taste of Our <span>Starters</span></h2>
-    <div class="menu-grid" id="menuPreview" style="display:grid"></div>
-    <div style="text-align:center;margin-top:40px">
-      <a href="menu.html" class="btn-primary" style="display:inline-block">View Full Menu</a>
-    </div>
-  </section>
-
-  <section id="testimonials">
-    <p class="section-label" data-aos="fade-up">Testimonials</p>
-    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">What Are They <span>Saying About Us</span></h2>
-    <div class="testimonial-wrapper" data-aos="zoom-in" data-aos-delay="150">
-      <button class="testimonial-arrow left" onclick="prevTestimonial()"><i class="fas fa-chevron-left"></i></button>
-      <div class="testimonial-content" id="testimonialContent"></div>
-      <button class="testimonial-arrow right" onclick="nextTestimonial()"><i class="fas fa-chevron-right"></i></button>
-    </div>
-    <div class="testimonial-dots" id="testimonialDots"></div>
+  <section id="chefs">
+    <p class="section-label" data-aos="fade-up">Chefs</p>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Our <span>Professional Chefs</span></h2>
+    <div class="chefs-grid" id="chefsGrid"></div>
   </section>
 
   <footer id="footer">
@@ -167,7 +138,7 @@
     </div>
   </footer>
 
-  <a href="#home" class="back-top" id="backTop"><i class="fas fa-arrow-up"></i></a>
+  <a href="#" class="back-top" id="backTop"><i class="fas fa-arrow-up"></i></a>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="data.js"></script>
